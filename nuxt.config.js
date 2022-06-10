@@ -3,7 +3,7 @@ export default {
   target: 'static',
   router: {
     prefetchPayloads: true,
-    base: '/swskillsimu-nuxt/'
+    base: '/swskillsimu/'
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
