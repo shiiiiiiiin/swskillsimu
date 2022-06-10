@@ -4,25 +4,8 @@
   <div class="w-[1280px] mx-auto">
     <!-- Temporary i18n Switcher -->
     <div class="flex flex-row justify-center w-full mt-4 text-center text-sm text-white gap-2">
-      <span>
-        <nuxt-link :to="switchLocalePath('en')" class="bg-zinc-800 px-4 py-2 rounded-lg">
-          English
-        </nuxt-link>
-      </span>
-      <span>
-        <nuxt-link :to="switchLocalePath('ja')" class="bg-zinc-800 px-4 py-2 rounded-lg">
-          日本語
-        </nuxt-link>
-      </span>
-      <span>
-        <nuxt-link :to="switchLocalePath('ko')" class="bg-zinc-800 px-4 py-2 rounded-lg">
-          한글
-        </nuxt-link>
-      </span>
-      <span>
-        <nuxt-link :to="switchLocalePath('zh')" class="bg-zinc-800 px-4 py-2 rounded-lg">
-          官话
-        </nuxt-link>
+      <span v-for="locale in availableLocales" :key="locale.code">
+        <nuxt-link :to="switchLocalePath(locale.code) + '/'" class="bg-zinc-800 px-4 py-2 rounded-lg" prefetch v-text="locale.name" />
       </span>
     </div>
 
@@ -50,6 +33,11 @@ export default {
   data () {
     return {
       characters: this.$t('characters')
+    }
+  },
+  computed: {
+    availableLocales () {
+      return this.$i18n.locales
     }
   }
 }

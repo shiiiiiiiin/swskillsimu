@@ -60,10 +60,10 @@ export default {
   // i18n Internationalization
   i18n: {
     locales: [
-      { code: 'en', file: 'en.js' },
-      { code: 'ja', file: 'ja.js' },
-      { code: 'ko', file: 'ko.js' },
-      { code: 'zh', file: 'zh.js' }
+      { code: 'en', name: 'English', file: 'en.js' },
+      { code: 'ja', name: '日本語', file: 'ja.js' },
+      { code: 'ko', name: '한글', file: 'ko.js' },
+      { code: 'zh', name: '官话', file: 'zh.js' }
     ],
     lazy: true,
     langDir: 'locales/',
