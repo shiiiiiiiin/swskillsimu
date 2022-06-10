@@ -2,6 +2,7 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   router: {
+    prefetchPayloads: false,
     base: '/swskillsimu-nuxt/'
   },
 
