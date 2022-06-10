@@ -10,7 +10,8 @@
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint": "npm run lint:js",
     "lintfix": "npm run lint:js -- --fix",
-    "deploy": "push-dir --dir=dist --branch=main --cleanup"
+    "workflow-build": "nuxt build",
+    "workflow-generate": "nuxt generate"
   },
   "dependencies": {
     "@nuxtjs/i18n": "^7.2.2",
