@@ -20,7 +20,7 @@
               <h6 class="text-sm text-zinc-400" v-text="$t('contributors_role.' + contributor.role)" />
             </div>
             <!-- Contributor GitHub Link -->
-            <a v-if="contributor.github_username !== null" :href="'https://github.com/' + contributor.github_username" target="_blank" class="shrink-0">
+            <a v-show="contributor.github_username !== null" :href="'https://github.com/' + contributor.github_username" target="_blank" class="shrink-0">
               <!-- GitHub Icon -->
               <IconGithub class="self-center h-8 w-8" />
             </a>
