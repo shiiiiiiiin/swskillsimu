@@ -20,8 +20,14 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
+      - name: Clean cache
+        run: npm cache clean --force
+
       - name: Install dependencies
         run: npm install
+
+      - name: Build
+        run: nuxt build
 
       - name: Generate
         run: nuxt generate
