@@ -11,3 +11,25 @@
         @apply underline;
     }
 }
+
+@layer components {
+    .section {
+        @apply flex flex-col mt-8;
+    }
+
+    .section-heading {
+        @apply relative px-10 py-4 w-full bg-zinc-800 text-white shadow-lg rounded-lg -skew-x-12;
+    }
+
+    .section-heading__title {
+        @apply w-full tracking-widest text-lg font-extrabold uppercase skew-x-12 inline-flex items-center;
+    }
+
+    .section-body {
+        @apply -mt-2 mx-8 pt-2 bg-zinc-700 rounded-b-lg overflow-hidden;
+    }
+
+    .section-body__text {
+        @apply px-6 py-6 text-white;
+    }
+}

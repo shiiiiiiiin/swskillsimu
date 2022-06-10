@@ -20,6 +20,6 @@
 
 <script>
 export default {
-  name: 'NoScript'
+  name: 'NoJavascript'
 }
 </script>

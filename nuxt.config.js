@@ -19,6 +19,12 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
+    script: [
+      {
+        src: 'https://kit.fontawesome.com/4dd0de6c05.js',
+        crossorigin: 'anonymous'
+      }
+    ],
     bodyAttrs: {
       class: 'bg-fixed bg-cover bg-center bg-no-repeat bg-[url("~/assets/img/background.png")]'
     }
@@ -34,7 +40,7 @@ export default {
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: false,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
