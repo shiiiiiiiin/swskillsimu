@@ -8,9 +8,9 @@
 
     <div class="section-body rounded-none">
       <div class="grid grid-cols-10">
-        <a :href="localePath('stella')">
+        <NuxtLink :to="localePath('/')" prefetch>
           <img src="~/assets/img/characters/stella/select.png" alt="">
-        </a>
+        </NuxtLink>
       </div>
     </div>
   </div>
