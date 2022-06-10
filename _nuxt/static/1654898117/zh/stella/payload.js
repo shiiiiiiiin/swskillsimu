@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/zh/stella", {data:[{}],fetch:{},mutations:void 0});

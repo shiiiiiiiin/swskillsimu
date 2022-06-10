@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/ko/stella", {data:[{}],fetch:{},mutations:void 0});
