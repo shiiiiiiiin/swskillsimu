@@ -1,4 +1,4 @@
-# @shintoshio-me/nuxt-test-app
+# SoulWorker Skill Simulator
 
 ## Build Setup
 
